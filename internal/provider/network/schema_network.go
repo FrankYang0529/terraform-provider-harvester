@@ -14,8 +14,8 @@ func Schema() map[string]*schema.Schema {
 		constants.FieldNetworkVlanID: {
 			Type:         schema.TypeInt,
 			Required:     true,
-			ValidateFunc: validation.IntBetween(1, 4094),
-			Description:  "e.g. 1-4094",
+			ValidateFunc: validation.IntBetween(0, 4094),
+			Description:  "e.g. 0-4094",
 		},
 		constants.FieldNetworkConfig: {
 			Type:     schema.TypeString,

@@ -47,29 +47,15 @@ func (c *Constructor) Setup() util.Processors {
 					vlanID      = i.(int)
 				)
 				if vlanID != 0 {
-					networkType = builder.NetworkTypeVLAN
-					clusterNetworkName := c.Network.Labels[networkutils.KeyClusterNetworkLabel]
-					c.Network.Spec.Config = fmt.Sprintf(builder.NetworkVLANConfigTemplate, c.Network.Name, clusterNetworkName, vlanID)
-				} else {
-					networkType = builder.NetworkTypeCustom
+					networkType = string(networkutils.L2VlanNetwork)
+				} else if vlanID == 0 {
+					networkType = string(networkutils.UntaggedNetwork)
 				}
+				clusterNetworkName := c.Network.Labels[networkutils.KeyClusterNetworkLabel]
+				c.Network.Spec.Config = fmt.Sprintf(builder.NetworkVLANConfigTemplate, c.Network.Name, clusterNetworkName, vlanID)
+
 				c.Network.Labels[networkutils.KeyVlanLabel] = strconv.Itoa(vlanID)
-				c.Network.Labels[builder.LabelKeyNetworkType] = networkType
-				return nil
-			},
-			Required: true,
-		},
-		{
-			Field: constants.FieldNetworkConfig,
-			Parser: func(i interface{}) error {
-				if c.Network.Labels[builder.LabelKeyNetworkType] == builder.NetworkTypeVLAN {
-					return nil
-				}
-				config := i.(string)
-				if config == "" {
-					return errors.New("must specify config in custom network type")
-				}
-				c.Network.Spec.Config = config
+				c.Network.Labels[networkutils.KeyNetworkType] = networkType
 				return nil
 			},
 			Required: true,
