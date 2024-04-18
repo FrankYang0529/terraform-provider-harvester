@@ -1549,6 +1549,8 @@ github.com/cockroachdb/datadriven v0.0.0-20200714090401-bf6692d28da5/go.mod h1:h
 github.com/cockroachdb/errors v1.2.4/go.mod h1:rQD95gz6FARkaKkQXUksEje/d9a6wBJoCr5oaCLELYA=
 github.com/cockroachdb/logtags v0.0.0-20190617123548-eb05cc24525f/go.mod h1:i/u985jwjWRlyHXQbwatDASoW0RMlZ/3i9yJHE2xLkI=
 github.com/codahale/hdrhistogram v0.0.0-20161010025455-3a0bb77429bd/go.mod h1:sE/e/2PUdi/liOCUjSTXgM1o87ZssimdTWN964YiIeI=
+github.com/connorkuehl/harvester v0.0.0-20240401162214-7e21ccf9122e h1:Eg+wq4gxRJrkAl+L9SmX9QlYarmpZFY/FFSffA9qha0=
+github.com/connorkuehl/harvester v0.0.0-20240401162214-7e21ccf9122e/go.mod h1:/B1eI2G6bS4mEh1MIgonXQM+GY3bMEuTeHIvPYw/O+E=
 github.com/containernetworking/cni v1.1.2 h1:wtRGZVv7olUHMOqouPpn3cXJWpJgM6+EUl31EQbXALQ=
 github.com/containernetworking/cni v1.1.2/go.mod h1:sDpYKmGVENF3s6uvMvGgldDWeG8dMxakj/u+i9ht9vw=
 github.com/coreos/bbolt v1.3.2/go.mod h1:iRUV2dpdMOn7Bo10OQBFzIJO9kkE559Wcmn+qkEiiKk=
@@ -2074,8 +2076,6 @@ github.com/grpc-ecosystem/grpc-gateway/v2 v2.11.3/go.mod h1:o//XUCC/F+yRGJoPO/VU
 github.com/grpc-ecosystem/grpc-gateway/v2 v2.16.0/go.mod h1:YN5jB8ie0yfIUg6VvR9Kz84aCaG7AsGZnLjhHbUqwPg=
 github.com/grpc-ecosystem/grpc-gateway/v2 v2.19.0 h1:Wqo399gCIufwto+VfwCSvsnfGpF/w5E9CNxSwbpD6No=
 github.com/grpc-ecosystem/grpc-gateway/v2 v2.19.0/go.mod h1:qmOFXW2epJhM0qSnUUYpldc7gVz2KMQwJ/QYCDIa7XU=
-github.com/harvester/harvester v1.3.0 h1:+0Ls8hjD1fIF2SyT8GPAYjaxbdO/224IwafW2maWtLs=
-github.com/harvester/harvester v1.3.0/go.mod h1:R0aCUSN4C6P6lcIyse4xdSXkpbB4s9eLz5ok6TTE98w=
 github.com/harvester/harvester-network-controller v0.3.5 h1:p6c+JK4v3YmLEsuGs4pX8xww9ykW0Wx89PKqbHqGKmE=
 github.com/harvester/harvester-network-controller v0.3.5/go.mod h1:VW3a3dnZTp1eFMfxUUXWTvgqroSEHrXbahsOvM7MieE=
 github.com/harvester/node-manager v0.1.5-0.20230614075852-de2da3ef3aca h1:ySmceYltYR2wmeAvifoXtHQOK/N6v7z7Rkaq/6IPJ5A=
@@ -2667,8 +2667,8 @@ github.com/rancher/rke v1.3.18 h1:3SeVpXwByI+xUv6XLMq2gLEOA6KOvgHlVYew228IlGk=
 github.com/rancher/rke v1.3.18/go.mod h1:FYb66B2+kAJVQ80SFEr56mC9yjm7TrviK2miZG+c5qY=
 github.com/rancher/steve v0.0.0-20221209194631-acf9d31ce0dd h1:U+FznevSlf4Lm8oot0s1QyJSGuwV7jWBvFeh15m5pv0=
 github.com/rancher/steve v0.0.0-20221209194631-acf9d31ce0dd/go.mod h1:n1dJWcWsVKYElmmKlNt8w6KcpaK61M7PDiXrnAqeNSw=
-github.com/rancher/system-upgrade-controller/pkg/apis v0.0.0-20210727200656-10b094e30007 h1:ru+mqGnxMmKeU0Q3XIDxkARvInDIqT1hH2amTcsjxI4=
-github.com/rancher/system-upgrade-controller/pkg/apis v0.0.0-20210727200656-10b094e30007/go.mod h1:Ja346o44aTPWADc/5Jm93+KgctT6KtftuOosgz0F2AM=
+github.com/rancher/system-upgrade-controller/pkg/apis v0.0.0-20230803010539-04a0b9ef5858 h1:2HMLOnmZIK0yh1VAQjiJNA16NaTKwFc7l82yZ7/g+aA=
+github.com/rancher/system-upgrade-controller/pkg/apis v0.0.0-20230803010539-04a0b9ef5858/go.mod h1:mixjLUiyLG6zastdavr1zVeylUYoAL7EHQITdn5HTUM=
 github.com/rancher/wrangler v0.6.1/go.mod h1:L4HtjPeX8iqLgsxfJgz+JjKMcX2q3qbRXSeTlC/CSd4=
 github.com/rancher/wrangler v0.6.2-0.20200427172034-da9b142ae061/go.mod h1:n5Du/gGD7WoiqnEo0SHnPirDIp1V9Zu+6guc8lXS2dk=
 github.com/rancher/wrangler v0.6.2-0.20200714200521-c61fae623942/go.mod h1:8LdIqAQPHysxNlHqmKbUiDIx9ULt9IHUauh9aOnr67k=
@@ -3024,7 +3024,6 @@ golang.org/x/exp v0.0.0-20200207192155-f17229e696bd/go.mod h1:J/WKrq2StrnmMY6+EH
 golang.org/x/exp v0.0.0-20200224162631-6cc2880d07d6/go.mod h1:3jZMyOhIsHpP37uCMkUooju7aAi5cS1Q23tOzKc+0MU=
 golang.org/x/exp v0.0.0-20220827204233-334a2380cb91/go.mod h1:cyybsKvd6eL0RnXn6p/Grxp8F5bW7iYuBgsNCOHpMYE=
 golang.org/x/exp v0.0.0-20230206171751-46f607a40771/go.mod h1:CxIveKay+FTh1D0yPZemJVgC/95VzuuOLq5Qi4xnoYc=
-golang.org/x/exp v0.0.0-20231006140011-7918f672742d h1:jtJma62tbqLibJ5sFQz8bKtEM8rJBtfilJ2qTU199MI=
 golang.org/x/exp v0.0.0-20231006140011-7918f672742d/go.mod h1:ldy0pHrwJyGW56pPQzzkH36rKxoZW1tw7ZJpeKx+hdo=
 golang.org/x/image v0.0.0-20180708004352-c73c2afc3b81/go.mod h1:ux5Hcp/YLpHSI86hEcLt0YII63i6oz57MZXIpbrjZUs=
 golang.org/x/image v0.0.0-20190227222117-0694c2d4d067/go.mod h1:kZ7UVZpmo3dzQBMxlp+ypCbDeSB+sBbTgSJuh5dn5js=

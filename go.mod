@@ -178,7 +178,7 @@ require (
 	github.com/rancher/remotedialer v0.2.6-0.20220624190122-ea57207bf2b8 // indirect
 	github.com/rancher/rke v1.3.18 // indirect
 	github.com/rancher/steve v0.0.0-20221209194631-acf9d31ce0dd // indirect
-	github.com/rancher/system-upgrade-controller/pkg/apis v0.0.0-20210727200656-10b094e30007 // indirect
+	github.com/rancher/system-upgrade-controller/pkg/apis v0.0.0-20230803010539-04a0b9ef5858 // indirect
 	github.com/robfig/cron v1.2.0 // indirect
 	github.com/russross/blackfriday v1.6.0 // indirect
 	github.com/shirou/gopsutil/v3 v3.23.7 // indirect
@@ -202,7 +202,6 @@ require (
 	go.opentelemetry.io/proto/otlp v1.1.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	golang.org/x/crypto v0.21.0 // indirect
-	golang.org/x/exp v0.0.0-20231006140011-7918f672742d // indirect
 	golang.org/x/net v0.23.0 // indirect
 	golang.org/x/oauth2 v0.17.0 // indirect
 	golang.org/x/sync v0.6.0 // indirect
@@ -239,3 +238,5 @@ require (
 	sigs.k8s.io/structured-merge-diff/v4 v4.2.3 // indirect
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
+
+replace github.com/harvester/harvester => github.com/connorkuehl/harvester v0.0.0-20240401162214-7e21ccf9122e
